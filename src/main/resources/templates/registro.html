@@ -18,6 +18,31 @@
                     <label for="contrasenia"> Contraseña: </label>
                     <input type="password" id="contrasenia" name="contrasenia"> <br><br>
 
+                    <label for="txt_pseudonimo"> Pseudonimo: </label>
+                    <input type="text" id="txt_pseudonimo" name="txt_pseudonimo" pattern="[a-zA-Z]{3,10}-[0-9]{2,10}">
+                    <br><br>
+
+                    <input type="radio" id="gen_masculino" name="rad_genero">
+                    <label for="gen_masculino">Masculino</label>
+
+                    <input type="radio" id="gen_femenino" name="rad_genero">
+                    <label for="gen_femenino">Femenino</label>
+
+                    <input type="radio" id="gen_otro" name="rad_genero">
+                    <label for="gen_otro">Otro</label><br><br>
+
+                    <input type="select" id="sel_suscripcion" name="sel_suscripcion">
+                    <label for="sel_suscripcion">(Gratis, Mensual, Anual)</label><br><br>
+
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+                    <label for="fechaNacimiento">Fecha de Nacimiento</label><br><br>
+
+                    <input type="checkbox" id="chk_terminos" name="chk_terminos">
+                    <label for="chk_terminos">Aceptar Términos</label><br><br>
+
+                    <input type="textarea" id="comentarios" name="comentarios">
+                    <label for="comentarios">Comentarios</label><br><br>
+
                     <input type="submit">
                     <input type="reset">
                 </form>
