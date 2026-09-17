@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class NebulaMusicApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(NebulaMusicApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(NebulaMusicApplication.class, args);
+    }
 
 }
