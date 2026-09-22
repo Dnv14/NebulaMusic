@@ -44,6 +44,14 @@ public class MainController {
 
     @PostMapping({"/autenticacion"})
     public String autenticacion(@RequestParam("correo") String correo, @RequestParam("contrasenia") String contrasenia) {
-        return "";
+        if (usuarioService.autenticar(correo, contrasenia)) {
+            return "redirect:/index";
+        }
+        return "redirect:/error.html";
+    }
+
+    @GetMapping({"/cerrar-sesion"})
+    public String cerrarSesion(){
+        return "redirect:/iniciar-sesion?logout";
     }
 }
